@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../static/css/main.css" rel="stylesheet" > 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+     function ButtonClicked2()
+{
+  alert("Thankyou for your feedback!Your feedback has been successfully sent to admins.");
+   document.getElementById("formsubmitbutton").style.display = "none"; // to undisplay
+   document.getElementById("buttonreplacement").style.display = ""; // to display
+   return true;
+}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="nav" style="overflow: hidden;">
+       
+      <img src="../static/name.JPG" style="width: 150px; height:50px;">
+       <a style=" margin-top:3px;margin-bottom:3px;margin-left:55%;color:black;text-decoration: none; " href="{{url_for('homepage')}}"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+       <a style=" margin-top:3px;margin-bottom:3px;background-color:lightblue;color:black;text-decoration: none; " href=#Content><i class="fa fa-tasks fa-fw" aria-hidden="true"></i>Content</a> 
+       <a style=" margin-top:3px;margin-bottom:3px;" href="{{url_for('contactus')}}"><i class="fa fa-phone fa-fw"></i>ContactUs</a> 
+
+       <a href="{{url_for('index')}} " style="margin-top:3px;margin-bottom:3px;color:black;text-decoration: none;"><i class="fa fa-sign-out fa-fw"></i>Logout</a> 
+    </div>
+  </header>
+  <marquee behavior="scroll" width="100%" direction="right" height="50px" scrollamount="8" style="background-color:lightblue; color:black;">
+        
+    <p style="margin-top: 14px;font-size: 18px; color:black;"><i>Stay home.Stay safe.<a href="{{url_for('mapcorona')}}" style="color:red;"> Click here</a> to see which cities are currently in red,orange and green zones.</i></p>
+      
+       </marquee>
+      <br><br><br>
+
+<h3 style="text-align: center;font-style: italic;">Programming</h3>
+<div class="container">
+  <div id="accordion" style="width:700px; margin-left: 20%;">
+    <div class="card">
+      <div class="card-header">
+        <a style="font-size: larger; font-weight: bold;" class="card-link" data-toggle="collapse" href="#collapseOne">
+          C &bigtriangledown;
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          <p style="color:black">Basic Level Quiz</p>
+          <a href="{{url_for('q1')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q1')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">Intermediate Level Quiz</p>
+          <a href="{{url_for('q1')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q1')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">High Level Quiz</p>
+          <a href="{{url_for('q1')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q1')}}" style=" font-size: large;">Quiz 2</a><br>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a style="font-size: larger; font-weight: bold;" class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        C++ &bigtriangledown;
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p style="color:black">Basic Level Quiz</p>
+          <a href=# style= "font-size: large;">Quiz 1</a><br>
+          <a href=# style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">Intermediate Level Quiz</p>
+          <a href=# style= "font-size: large;">Quiz 1</a><br>
+          <a href=# style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">High Level Quiz</p>
+          <a href=# style= "font-size: large;">Quiz 1</a><br>
+          <a href=# style=" font-size: large;">Quiz 2</a><br>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a style="font-size: larger; font-weight: bold;" class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          JAVA &bigtriangledown;
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p style="color:black">Basic Level Quiz</p>
+          <a href="{{url_for('q5')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q5')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">Intermediate Level Quiz</p>
+          <a href="{{url_for('q5')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q5')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">High Level Quiz</p>
+          <a href="{{url_for('q5')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q5')}}" style=" font-size: large;">Quiz 2</a><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<h3 style="text-align: center;font-style: italic;">Numerical Ability</h3>
+    <div class="container">
+  <div id="accordion"style="width:700px; margin-left: 20%;">
+    <div class="card">
+      <div class="card-header">
+        <a style="font-size: larger; font-weight: bold;" class="card-link" data-toggle="collapse" href="#collapseFour">
+          Quantitative Aptitude &bigtriangledown;
+        </a>
+      </div>
+      <div id="collapseFour" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          <p style="color:black">Basic Level Quiz</p>
+          <a href="{{url_for('q2')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q2')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">Intermediate Level Quiz</p>
+          <a href="{{url_for('q2')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q2')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">High Level Quiz</p>
+          <a href="{{url_for('q2')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q2')}}" style=" font-size: large;">Quiz 2</a><br>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a  style="font-size: larger; font-weight: bold;"  class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+          Logical Ability &bigtriangledown;
+      </a>
+      </div>
+      <div id="collapseFive" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p style="color:black">Basic Level Quiz</p>
+          <a href="{{url_for('q4')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q4')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">Intermediate Level Quiz</p>
+          <a href="{{url_for('q4')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q4')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">High Level Quiz</p>
+          <a href="{{url_for('q4')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q4')}}" style=" font-size: large;">Quiz 2</a><br>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a style="font-size: larger; font-weight: bold;" class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+         Verbal Ability &bigtriangledown;
+        </a>
+      </div>
+      <div id="collapseSix" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p style="color:black">Basic Level Quiz</p>
+          <a href="{{url_for('q3')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q3')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">Intermediate Level Quiz</p>
+          <a href="{{url_for('q3')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q3')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">High Level Quiz</p>
+          <a href="{{url_for('q3')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q3')}}" style=" font-size: large;">Quiz 2</a><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<h3 style="text-align: center;font-style: italic;">Technical</h3>
+<div class="container">
+  <div id="accordion" style="width:700px; margin-left: 20%;">
+    <div class="card">
+      <div class="card-header">
+        <a style="font-size: larger; font-weight: bold;" class="card-link" data-toggle="collapse" href="#collapseSeven">
+          Software Engineering &bigtriangledown;
+        </a>
+      </div>
+      <div id="collapseSeven" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          <p style="color:black">Basic Level Quiz</p>
+          <a href="{{url_for('q8')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q8')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">Intermediate Level Quiz</p>
+          <a href="{{url_for('q8')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q8')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">High Level Quiz</p>
+          <a href="{{url_for('q8')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q8')}}" style=" font-size: large;">Quiz 2</a><br>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a style="font-size: larger; font-weight: bold;" class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
+        Operating System &bigtriangledown;
+      </a>
+      </div>
+      <div id="collapseEight" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p style="color:black">Basic Level Quiz</p>
+          <a href="{{url_for('q7')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q7')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">Intermediate Level Quiz</p>
+          <a href="{{url_for('q7')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q7')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">High Level Quiz</p>
+          <a href="{{url_for('q7')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q7')}}" style=" font-size: large;">Quiz 2</a><br>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a style="font-size: larger; font-weight: bold;" class="collapsed card-link" data-toggle="collapse" href="#collapseNine">
+          DBMS &bigtriangledown;
+        </a>
+      </div>
+      <div id="collapseNine" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p style="color:black">Basic Level Quiz</p>
+          <a href="{{url_for('q6')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q6')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">Intermediate Level Quiz</p>
+          <a href="{{url_for('q6')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q6')}}" style=" font-size: large;">Quiz 2</a><br>
+          <br>
+          <p style="color:black">High Level Quiz</p>
+          <a href="{{url_for('q6')}}" style= "font-size: large;">Quiz 1</a><br>
+          <a href="{{url_for('q6')}}" style=" font-size: large;">Quiz 2</a><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<section style="background-color: lightgrey; height:100px;">
+  <br><br>
+<!-- Button trigger modal -->
+<p style="font-weight: bold; font-style: italic;margin-left:30%;"> Help us improve! Click here to provide us with feedback.&nbsp;
+<button type="button" class="btn btn-primary" data-toggle="modal"  data-target="#exampleModal">
+Click here.
+</button></p>
+
+<!-- Modal -->
+<form action="{{url_for('fdback')}}" method="POST">
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <!--form-->
+         Name
+        <input class="form-control" type="text" placeholder="Enter your Name" name="Name_fd"><br>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="Email_fd">
+        </div>
+        Component Name:
+        <input type="text" style="border:1px solid lightgray;" readonly class="form-control-plaintext" name="Component_fd" value="  Quizes">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Rate this component out of 5!</label>
+          <select class="form-control" id="exampleFormControlSelect1" name="opt" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Write your feedback here!</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="txt_fdb"></textarea>
+        </div>
+        <button class="btn" type="submit"  style="width:100px; height:50px; border-radius: 5px; background-color:rgba(46, 42, 42, 0.801);color:white" onclick="ButtonClicked2()">Submit </button>
+          <button type="button" style="width:100px; height:50px; border-radius: 5px; background-color:rgba(46, 42, 42, 0.801);color:white"  class="btn btn-secondary" data-dismiss="modal">Close</button>
+     
+      <!--form-->
+      </div>
+     
+    </div>
+  </div>
+  </div>
+  </form>
+</section>
+</body>
+</html>

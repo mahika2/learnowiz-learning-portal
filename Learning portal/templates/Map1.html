@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_706d18ef7aa54b53a1fdac9cc15e9151 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_706d18ef7aa54b53a1fdac9cc15e9151" ></div>
+        
+</body>
+<script>    
+    
+            var map_706d18ef7aa54b53a1fdac9cc15e9151 = L.map(
+                "map_706d18ef7aa54b53a1fdac9cc15e9151",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_da9576bfc8e14b5f8e9b1a59838cf974 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_706d18ef7aa54b53a1fdac9cc15e9151);
+        
+    
+            var feature_group_0d7de0c8b1ec40d295fe6bb04d59e857 = L.featureGroup(
+                {}
+            ).addTo(map_706d18ef7aa54b53a1fdac9cc15e9151);
+        
+    
+            var marker_dda2cf4dc01346e8a5af6e7016b6d5be = L.marker(
+                [28.7041, 77.1025],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_d0ab3fe4a6d04b3eb7ad008eed6f1c42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dda2cf4dc01346e8a5af6e7016b6d5be.setIcon(icon_d0ab3fe4a6d04b3eb7ad008eed6f1c42);
+        
+    
+        var popup_95e2f7cf760040deb4cfc04a4809ddd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9faaa1681f5b4d56bdac91551f4911cf = $(`<div id="html_9faaa1681f5b4d56bdac91551f4911cf" style="width: 100.0%; height: 100.0%;">('Cases in Delhi ', 15257.0)</div>`)[0];
+            popup_95e2f7cf760040deb4cfc04a4809ddd2.setContent(html_9faaa1681f5b4d56bdac91551f4911cf);
+        
+
+        marker_dda2cf4dc01346e8a5af6e7016b6d5be.bindPopup(popup_95e2f7cf760040deb4cfc04a4809ddd2)
+        ;
+
+        
+    
+    
+            var marker_adb25b810c6f46c49bd306e2bc40f73a = L.marker(
+                [19.7515, 75.7139],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_87e2c3c722504622b3d6ce5b577635c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_adb25b810c6f46c49bd306e2bc40f73a.setIcon(icon_87e2c3c722504622b3d6ce5b577635c6);
+        
+    
+        var popup_b36f2ba07eb345468d4759cfae11bc9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7eda6e815ef4f86aeebb79e603d8768 = $(`<div id="html_a7eda6e815ef4f86aeebb79e603d8768" style="width: 100.0%; height: 100.0%;">('Cases in Maharashtra', 56948.0)</div>`)[0];
+            popup_b36f2ba07eb345468d4759cfae11bc9f.setContent(html_a7eda6e815ef4f86aeebb79e603d8768);
+        
+
+        marker_adb25b810c6f46c49bd306e2bc40f73a.bindPopup(popup_b36f2ba07eb345468d4759cfae11bc9f)
+        ;
+
+        
+    
+    
+            var marker_3d430858932f4a65a33e4d5fee23f6dd = L.marker(
+                [22.2587, 71.1924],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_a5919260008b4d7bb964daf9d4b99d78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3d430858932f4a65a33e4d5fee23f6dd.setIcon(icon_a5919260008b4d7bb964daf9d4b99d78);
+        
+    
+        var popup_74d1ac5350e64c48b5cc41b853554798 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86c18976a5374485937011e5e88d0f2b = $(`<div id="html_86c18976a5374485937011e5e88d0f2b" style="width: 100.0%; height: 100.0%;">('Cases in Gujarat', 15195.0)</div>`)[0];
+            popup_74d1ac5350e64c48b5cc41b853554798.setContent(html_86c18976a5374485937011e5e88d0f2b);
+        
+
+        marker_3d430858932f4a65a33e4d5fee23f6dd.bindPopup(popup_74d1ac5350e64c48b5cc41b853554798)
+        ;
+
+        
+    
+    
+            var marker_406d6b4ab62e440e802cee54676f3267 = L.marker(
+                [27.0238, 74.2179],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_71c5068922594e51b09268d7a93898fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_406d6b4ab62e440e802cee54676f3267.setIcon(icon_71c5068922594e51b09268d7a93898fb);
+        
+    
+        var popup_6e24839cec3e40fc8589e848dd81c728 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e59434343d5c40fcae029a9bfff5506e = $(`<div id="html_e59434343d5c40fcae029a9bfff5506e" style="width: 100.0%; height: 100.0%;">('Cases in Rajasthan', 7703.0)</div>`)[0];
+            popup_6e24839cec3e40fc8589e848dd81c728.setContent(html_e59434343d5c40fcae029a9bfff5506e);
+        
+
+        marker_406d6b4ab62e440e802cee54676f3267.bindPopup(popup_6e24839cec3e40fc8589e848dd81c728)
+        ;
+
+        
+    
+    
+            var marker_cdaf524a49724672ac500a4b91057852 = L.marker(
+                [20.9517, 85.0985],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_5f038f84c8414e12beee7de7fe74c738 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_cdaf524a49724672ac500a4b91057852.setIcon(icon_5f038f84c8414e12beee7de7fe74c738);
+        
+    
+        var popup_3184d226d1c64cdeae033f1738b9b0ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97ea8be324994bcd9509e65060eafb43 = $(`<div id="html_97ea8be324994bcd9509e65060eafb43" style="width: 100.0%; height: 100.0%;">('Cases in Odisha', 1593.0)</div>`)[0];
+            popup_3184d226d1c64cdeae033f1738b9b0ee.setContent(html_97ea8be324994bcd9509e65060eafb43);
+        
+
+        marker_cdaf524a49724672ac500a4b91057852.bindPopup(popup_3184d226d1c64cdeae033f1738b9b0ee)
+        ;
+
+        
+    
+    
+            var marker_d67337c385934c478884af886e205b18 = L.marker(
+                [26.2006, 92.9376],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_52d2b9869a854a9a95753df10d7f7f77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d67337c385934c478884af886e205b18.setIcon(icon_52d2b9869a854a9a95753df10d7f7f77);
+        
+    
+        var popup_cd5390e1d16142e69fb00150abec4745 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6aff1950f1064fefbda34a980a88ddb0 = $(`<div id="html_6aff1950f1064fefbda34a980a88ddb0" style="width: 100.0%; height: 100.0%;">('Cases in Assam', 781.0)</div>`)[0];
+            popup_cd5390e1d16142e69fb00150abec4745.setContent(html_6aff1950f1064fefbda34a980a88ddb0);
+        
+
+        marker_d67337c385934c478884af886e205b18.bindPopup(popup_cd5390e1d16142e69fb00150abec4745)
+        ;
+
+        
+    
+    
+            var marker_4adeee7de92b4d1e9b26fcba77724e5c = L.marker(
+                [30.7333, 76.7794],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_1398c7f07ac64204a38c92ba9555bea8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4adeee7de92b4d1e9b26fcba77724e5c.setIcon(icon_1398c7f07ac64204a38c92ba9555bea8);
+        
+    
+        var popup_7bada94510474f10ae4d3f4e95ba9093 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a32f039834ba4a38af585511287a7c4e = $(`<div id="html_a32f039834ba4a38af585511287a7c4e" style="width: 100.0%; height: 100.0%;">('Cases in Chandigarh', 279.0)</div>`)[0];
+            popup_7bada94510474f10ae4d3f4e95ba9093.setContent(html_a32f039834ba4a38af585511287a7c4e);
+        
+
+        marker_4adeee7de92b4d1e9b26fcba77724e5c.bindPopup(popup_7bada94510474f10ae4d3f4e95ba9093)
+        ;
+
+        
+    
+    
+            var marker_6e64b46159d54d22aefc3f6f22fd0dd9 = L.marker(
+                [15.2993, 74.124],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_ce2ed833370d49d9b5d675ab760e44a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6e64b46159d54d22aefc3f6f22fd0dd9.setIcon(icon_ce2ed833370d49d9b5d675ab760e44a1);
+        
+    
+        var popup_e50f2e66f2164e268b9bd6385bef4122 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8345133065f541e89971f57d594ec796 = $(`<div id="html_8345133065f541e89971f57d594ec796" style="width: 100.0%; height: 100.0%;">('Cases in Goa', 68.0)</div>`)[0];
+            popup_e50f2e66f2164e268b9bd6385bef4122.setContent(html_8345133065f541e89971f57d594ec796);
+        
+
+        marker_6e64b46159d54d22aefc3f6f22fd0dd9.bindPopup(popup_e50f2e66f2164e268b9bd6385bef4122)
+        ;
+
+        
+    
+    
+            var marker_e12982b1ab76424485c082b24f73193a = L.marker(
+                [77.577049, 34.152588],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_81c1609c1850498e858081ac686b87b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e12982b1ab76424485c082b24f73193a.setIcon(icon_81c1609c1850498e858081ac686b87b0);
+        
+    
+        var popup_4aecae8a8c8748efb3de88660a4e263e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a80a7586eadf417590c595ab8b488eeb = $(`<div id="html_a80a7586eadf417590c595ab8b488eeb" style="width: 100.0%; height: 100.0%;">('Cases in Ladakh', 53.0)</div>`)[0];
+            popup_4aecae8a8c8748efb3de88660a4e263e.setContent(html_a80a7586eadf417590c595ab8b488eeb);
+        
+
+        marker_e12982b1ab76424485c082b24f73193a.bindPopup(popup_4aecae8a8c8748efb3de88660a4e263e)
+        ;
+
+        
+    
+    
+            var marker_b5cc1f389a17431e964dc1c1049b4ded = L.marker(
+                [11.9416, 79.8083],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_b0cef5276ca549dfb472ae72e9574f9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b5cc1f389a17431e964dc1c1049b4ded.setIcon(icon_b0cef5276ca549dfb472ae72e9574f9d);
+        
+    
+        var popup_3c0d72f6c21b4c8fac04bc2bab8ba639 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3087661eeb0847c38e87535ec5b7cce0 = $(`<div id="html_3087661eeb0847c38e87535ec5b7cce0" style="width: 100.0%; height: 100.0%;">('Cases in Puducherry', 46.0)</div>`)[0];
+            popup_3c0d72f6c21b4c8fac04bc2bab8ba639.setContent(html_3087661eeb0847c38e87535ec5b7cce0);
+        
+
+        marker_b5cc1f389a17431e964dc1c1049b4ded.bindPopup(popup_3c0d72f6c21b4c8fac04bc2bab8ba639)
+        ;
+
+        
+    
+    
+            var marker_5b76f1a857534e03a9254ccf99ff9ef4 = L.marker(
+                [11.7401, 92.6586],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_4ffb167cc0204bd8a8edf9d8f2056e85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5b76f1a857534e03a9254ccf99ff9ef4.setIcon(icon_4ffb167cc0204bd8a8edf9d8f2056e85);
+        
+    
+        var popup_b0882bb964d04f82908de232a43a5910 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb5866177ab34257a0802f7e91597a61 = $(`<div id="html_bb5866177ab34257a0802f7e91597a61" style="width: 100.0%; height: 100.0%;">('Cases in Andaman and Nicobar', 33.0)</div>`)[0];
+            popup_b0882bb964d04f82908de232a43a5910.setContent(html_bb5866177ab34257a0802f7e91597a61);
+        
+
+        marker_5b76f1a857534e03a9254ccf99ff9ef4.bindPopup(popup_b0882bb964d04f82908de232a43a5910)
+        ;
+
+        
+    
+    
+            var marker_9d45117050be44bb9d1be9f571a32814 = L.marker(
+                [23.1645, 92.9376],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_26b18bd245c441c5aa0ba5e9d7df8047 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9d45117050be44bb9d1be9f571a32814.setIcon(icon_26b18bd245c441c5aa0ba5e9d7df8047);
+        
+    
+        var popup_f52ded78678f482d8bdc38e51abcfa66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c54b61f6c90e42dba78001ad7f90347a = $(`<div id="html_c54b61f6c90e42dba78001ad7f90347a" style="width: 100.0%; height: 100.0%;">('Cases in Mizoram', 1.0)</div>`)[0];
+            popup_f52ded78678f482d8bdc38e51abcfa66.setContent(html_c54b61f6c90e42dba78001ad7f90347a);
+        
+
+        marker_9d45117050be44bb9d1be9f571a32814.bindPopup(popup_f52ded78678f482d8bdc38e51abcfa66)
+        ;
+
+        
+    
+    
+            var marker_a13a92934ff148abb9083f47adf8bebe = L.marker(
+                [27.533, 88.5122],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_0b221865ee0c4dd7b051b65641736998 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a13a92934ff148abb9083f47adf8bebe.setIcon(icon_0b221865ee0c4dd7b051b65641736998);
+        
+    
+        var popup_55e954f9232944c5b9f098306a56b7a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1cb85307b1e94b82a970ac31a9b87551 = $(`<div id="html_1cb85307b1e94b82a970ac31a9b87551" style="width: 100.0%; height: 100.0%;">('Cases in Sikkim', 1.0)</div>`)[0];
+            popup_55e954f9232944c5b9f098306a56b7a1.setContent(html_1cb85307b1e94b82a970ac31a9b87551);
+        
+
+        marker_a13a92934ff148abb9083f47adf8bebe.bindPopup(popup_55e954f9232944c5b9f098306a56b7a1)
+        ;
+
+        
+    
+    
+            var marker_014d81ea0d6141918d4ae423e3a15699 = L.marker(
+                [20.4283, 72.8397],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_b86f1858daf8436cba229b06b6478e13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_014d81ea0d6141918d4ae423e3a15699.setIcon(icon_b86f1858daf8436cba229b06b6478e13);
+        
+    
+        var popup_bb529ae5b31043d5b67a8a1aa72115b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54f21c2c042543f1854b9b54bab5327f = $(`<div id="html_54f21c2c042543f1854b9b54bab5327f" style="width: 100.0%; height: 100.0%;">('Cases in Daman and Diu', 0.0)</div>`)[0];
+            popup_bb529ae5b31043d5b67a8a1aa72115b1.setContent(html_54f21c2c042543f1854b9b54bab5327f);
+        
+
+        marker_014d81ea0d6141918d4ae423e3a15699.bindPopup(popup_bb529ae5b31043d5b67a8a1aa72115b1)
+        ;
+
+        
+    
+    
+            var marker_0401e845086d4f42ac37df612d85846d = L.marker(
+                [10.5667, 72.6417],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_50a4de3e645547c48bcab2273ec4c48f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0401e845086d4f42ac37df612d85846d.setIcon(icon_50a4de3e645547c48bcab2273ec4c48f);
+        
+    
+        var popup_5b65b3236ec44d448e54b1d40cd35365 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d13899733704d009b1f84ddd75c693f = $(`<div id="html_2d13899733704d009b1f84ddd75c693f" style="width: 100.0%; height: 100.0%;">('Cases in Lakshadweep', 1.0)</div>`)[0];
+            popup_5b65b3236ec44d448e54b1d40cd35365.setContent(html_2d13899733704d009b1f84ddd75c693f);
+        
+
+        marker_0401e845086d4f42ac37df612d85846d.bindPopup(popup_5b65b3236ec44d448e54b1d40cd35365)
+        ;
+
+        
+    
+    
+            var marker_badb409db92d4abc9dc8bb645c03924a = L.marker(
+                [28.218, 94.7278],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_ff7e011135dd499eb0ef0781fe0e0ad4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_badb409db92d4abc9dc8bb645c03924a.setIcon(icon_ff7e011135dd499eb0ef0781fe0e0ad4);
+        
+    
+        var popup_82c8ac91193f4f47b517966e24828011 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a14adc00dba841279f35ba342903215c = $(`<div id="html_a14adc00dba841279f35ba342903215c" style="width: 100.0%; height: 100.0%;">('Cases in Arunachal Pradesh', 2.0)</div>`)[0];
+            popup_82c8ac91193f4f47b517966e24828011.setContent(html_a14adc00dba841279f35ba342903215c);
+        
+
+        marker_badb409db92d4abc9dc8bb645c03924a.bindPopup(popup_82c8ac91193f4f47b517966e24828011)
+        ;
+
+        
+    
+    
+            var marker_6227499f0a8a40d79dd3160887557c8d = L.marker(
+                [26.1584, 94.5624],
+                {"color": "grey", "fillOpacity": 0.7, "radius": 0}
+            ).addTo(feature_group_0d7de0c8b1ec40d295fe6bb04d59e857);
+        
+    
+            var icon_c9fc5a1215f84cefad8c6d9d404e0145 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6227499f0a8a40d79dd3160887557c8d.setIcon(icon_c9fc5a1215f84cefad8c6d9d404e0145);
+        
+    
+        var popup_0fd5892c8cc242d9b55f572e7de02f20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5070ca4773047048c7ca02093a3e25a = $(`<div id="html_b5070ca4773047048c7ca02093a3e25a" style="width: 100.0%; height: 100.0%;">('Cases in Nagaland', 4.0)</div>`)[0];
+            popup_0fd5892c8cc242d9b55f572e7de02f20.setContent(html_b5070ca4773047048c7ca02093a3e25a);
+        
+
+        marker_6227499f0a8a40d79dd3160887557c8d.bindPopup(popup_0fd5892c8cc242d9b55f572e7de02f20)
+        ;
+
+        
+    
+    
+            var layer_control_0303ba5d58624b88aaf613c9a1c294e5 = {
+                base_layers : {
+                    "stamenterrain" : tile_layer_da9576bfc8e14b5f8e9b1a59838cf974,
+                },
+                overlays :  {
+                    "Corona Areas" : feature_group_0d7de0c8b1ec40d295fe6bb04d59e857,
+                },
+            };
+            L.control.layers(
+                layer_control_0303ba5d58624b88aaf613c9a1c294e5.base_layers,
+                layer_control_0303ba5d58624b88aaf613c9a1c294e5.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_706d18ef7aa54b53a1fdac9cc15e9151);
+        
+</script>
